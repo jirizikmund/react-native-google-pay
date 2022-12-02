@@ -77,6 +77,12 @@ public class RNGooglePayModule extends ReactContextBaseJavaModule {
     }
   };
 
+  @Override
+  public boolean canOverrideExistingModule() {
+    return true;
+  }
+
+
   public RNGooglePayModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
